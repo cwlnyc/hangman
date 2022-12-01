@@ -9,7 +9,7 @@ hangman_pieces = ['head', 'body', 'left arm', 'right arm', 'left leg', 'right le
 
 def get_word():
     api_url = 'https://api.api-ninjas.com/v1/randomword'
-    response = requests.get(api_url, headers={'X-Api-Key': 'UOp+98qkiurM2wI15MlOQA==YMcU4CJ2u7uYQhRB'})
+    response = requests.get(api_url, headers={'X-Api-Key': ''})
     if response.status_code == requests.codes.ok:
         response_json = json.loads(response.text)
         word = response_json['word'].lower()
